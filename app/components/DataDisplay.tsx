@@ -40,7 +40,11 @@ const DataDisplay = () => {
     // };
 
     const fetchData = async () => {
+<<<<<<< HEAD
       const response = await fetch("https://theaquasense.com/api/data");
+=======
+      const response = await fetch("/api/proxy-data");
+>>>>>>> ecbc39d (add proxy route)
       const result: SensorData[] = await response.json();
       console.log("Fetched data:", result); // Log the fetched data
       setData(result.reverse());
