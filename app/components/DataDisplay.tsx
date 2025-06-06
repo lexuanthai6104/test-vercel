@@ -40,7 +40,7 @@ const DataDisplay = () => {
     // };
 
     const fetchData = async () => {
-      const response = await fetch("/api/data?limit=10");
+      const response = await fetch("https://theaquasense.com/api/data");
       const result: SensorData[] = await response.json();
       console.log("Fetched data:", result); // Log the fetched data
       setData(result.reverse());
